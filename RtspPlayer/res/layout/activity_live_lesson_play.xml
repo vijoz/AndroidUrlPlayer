@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true" >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ECEDEE"
+                android:orientation="vertical"
+                android:paddingBottom="2dip"
+                android:paddingLeft="2dip"
+                android:paddingRight="1dip"
+                android:paddingTop="2dip" >
+
+                <SurfaceView
+                    android:id="@+id/videoview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llright"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/ll2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ECEDEE"
+                    android:orientation="vertical"
+                    android:paddingBottom="1dip"
+                    android:paddingLeft="1dip"
+                    android:paddingRight="2dip"
+                    android:paddingTop="2dip" >
+
+                    <SurfaceView
+                        android:id="@+id/videoview2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="#ECEDEE"
+                    android:orientation="vertical"
+                    android:paddingBottom="2dip"
+                    android:paddingLeft="1dip"
+                    android:paddingRight="2dip"
+                    android:paddingTop="1dip" >
+
+                    <SurfaceView
+                        android:id="@+id/videoview3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+</RelativeLayout>
